@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  transition: 0.5s;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -47,6 +48,11 @@ body {
 .sub-nav .social-icons .icon i {
   color: white;
 }
+@media screen and (max-width: 768px) {
+  .sub-nav {
+    display: none;
+  }
+}
 
 /* ///////////////////////////////////////////// */
 /* navbar style ///////////////////////////////// */
@@ -83,6 +89,9 @@ nav .container-fluid a h1 {
   padding-right: 15px;
   margin-right: 0;
 }
+#navbarNav ul li:last-child a:hover {
+  color: #f35525 !important;
+}
 #navbarNav ul li:last-child i {
   background-color: #f35525;
   width: 40px;
@@ -91,3 +100,38 @@ nav .container-fluid a h1 {
   line-height: 40px;
   text-align: center;
 }
+#navbarNav ul li:last-child a:hover i {
+  color: #fff !important;
+}
+nav button {
+  border: none !important;
+  position: relative;
+}
+nav button span {
+  display: block;
+  height: 3px;
+  background-color: #000;
+  width: 40px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+nav button span:first-child {
+  width: 25px;
+}
+nav button span:last-child {
+  width: 35px;
+}
+.open span:nth-child(2) {
+  background-color: transparent;
+}
+.open span:first-child {
+  width: 44px;
+  transform: rotate(37deg);
+  transform-origin: left;
+}
+.open span:last-child {
+  width: 44px;
+  transform: rotate(-37deg);
+  transform-origin: left;
+}
+/* */
