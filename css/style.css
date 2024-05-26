@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+/* style of sub nav ////////////////////////////////////// */
+.sub-nav {
+  height: 53px;
+  border-bottom: 1px solid #eee;
+}
+.sub-nav .info {
+  width: 450px;
+}
+.sub-nav .info .email {
+  border-right: 1px solid #eee;
+  padding-right: 25px;
+}
+.sub-nav .info .email p {
+  margin: 0;
+  font-size: 14px;
+  color: #7a7a7a;
+}
+.sub-nav .info .email i,
+.sub-nav .info .location i {
+  color: #f35525;
+}
+.sub-nav .info .location p {
+  margin: 0;
+  font-size: 14px;
+  color: #7a7a7a;
+}
+.sub-nav .social-icons .icon {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: #cdcdcd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+}
+.sub-nav .social-icons .icon:hover {
+  background-color: #f35525;
+}
+.sub-nav .social-icons .icon i {
+  color: white;
+}
+
+/* ///////////////////////////////////////////// */
+/* navbar style ///////////////////////////////// */
+nav .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+nav .container-fluid a h1 {
+  font-size: 28px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  /* line-height: 100px; */
+}
+
+#navbarNav ul li a {
+  margin: 0 20px;
+  font-weight: 500;
+  color: #1e1e1e;
+}
+#navbarNav ul li a.active,
+#navbarNav ul li a:hover {
+  color: #f35525;
+}
+#navbarNav ul li:last-child {
+  padding-right: 0;
+}
+#navbarNav ul li:last-child a {
+  color: white !important;
+  background-color: #1e1e1e;
+  border-radius: 20px;
+  font-size: 14px;
+  padding: 0;
+  padding-right: 15px;
+  margin-right: 0;
+}
+#navbarNav ul li:last-child i {
+  background-color: #f35525;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  line-height: 40px;
+  text-align: center;
+}
