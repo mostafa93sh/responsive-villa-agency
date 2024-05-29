@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   transition: 0.5s;
+  box-sizing: border-box;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -227,11 +228,144 @@ nav button span:last-child {
   }
 }
 
-/* 
- font-size: 62px;
-    width: 50%;
+/* ///////////////////////// Start of Feature Section //////////////////////////////////////////// */
+
+.features {
+  /* margin: 135px 0; */
+
+  /* padding: 0 170px; */
+  padding-top: 150px;
+}
+.features .image {
+  width: 270px;
+  position: relative;
+}
+.features .image img {
+  width: 100%;
+}
+.features .image .icon {
+  position: absolute;
+  bottom: 105px;
+  left: -36px;
+  background-color: #f35525;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.features .image .icon img {
+  width: 55%;
+  margin-left: 10px;
+}
+.features .features-benefits {
+  flex-basis: 36%;
+}
+.features .features-benefits p {
+  padding: 0;
+  margin: 0;
+}
+.features .features-benefits p:first-child {
+  font-weight: 600;
+  font-size: 17px;
+  color: #ee626b;
+  position: relative;
+}
+.features .features-benefits p:first-child::before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: 2px;
+  height: 21px;
+  width: 3px;
+  background-color: #ee626b;
+}
+.features .features-benefits p:nth-child(2) {
+  font-size: 40px;
+  font-weight: 700;
+}
+.features .features-benefits .accordion-button {
+  box-shadow: none;
+  background-color: #fafafa;
+  color: #1e1e1e;
+  font-weight: 500;
+  outline: none;
+}
+.features .features-benefits .accordion-button:not(.collapsed) {
+  color: #f35525;
+}
+.features .features-details {
+  flex-basis: 22%;
+  /*
+   padding-top: 35px; */
+}
+.features .features-details .image {
+  width: 47px;
+  height: 47px;
+}
+.features .features-details img {
+  /* width: 60px;
+  height: 60px; */
+  max-width: 100%;
+}
+.features .features-details .details-item {
+  padding-bottom: 40px;
+  border-bottom: 1px #d1cdcd solid;
+  margin-top: 20px;
+}
+.features .features-details .item-content p {
+  margin: 0;
+  padding: 0;
+}
+.features .features-details .item-content p:first-child {
+  font-size: 22px;
+  font-weight: 600;
+}
+.features .features-details .item-content p:nth-child(2) {
+  font-size: 14px;
+  color: #aaa;
+}
+/* ////////////////////////////////////////////////////////////////////// Responsvie feature section/////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////// Responsvie feature section/////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////// Responsvie feature section/////////////////////////////// */
+@media screen and (max-width: 992px) {
+  .features .image {
+    width: 200px;
+  }
+  .features .image .icon {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50%;
+    width: 50px;
+    height: 50px;
+  }
+  .features .image .icon img {
+    margin-left: 7px;
+  }
+  .features .features-details .item-content p:first-child {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+@media screen and (max-width: 768px) {
+  .features > div {
+    flex-direction: column;
+    gap: 27px;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 65%;
+    margin: auto;
+  }
+  .features .image .icon {
+    left: 0%;
+  }
+  .features .features-benefits p {
+    margin: 15px 0;
+  }
+  .features .features-benefits p:nth-child(2) {
+    font-size: 33px;
     font-weight: 700;
-    line-height: 1.15;
-
-
-*/
+  }
+}
